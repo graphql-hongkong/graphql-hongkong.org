@@ -663,104 +663,394 @@ export default function Landing() {
             className="row mb-30 text-center wow fadeInDown"
             data-wow-delay="0.3s"
           >
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <a href="https://aws.amazon.com">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../images/aws.png")}
-                    alt="AWS"
-                  />
+            <div className="row">
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
+                  <a href="https://twitter.com/dabit3" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/nader-dabit.jpg")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/dabit3"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a href="https://twitter.com/dabit3" target="_blank">
+                          Nader Dabit
+                        </a>
+                      </h3>
+                      <p>Developer Advocate, AWS</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <a href="https://aws.amazon.com/amplify">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../images/aws-amplify.png")}
-                    alt="AWS Amplify"
-                  />
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="0.8s">
+                  <a href="https://twitter.com/shrutikapoor08" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/shruti-kapoor.png")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/shrutikapoor08"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://twitter.com/shrutikapoor08"
+                          target="_blank"
+                        >
+                          Shruti Kapoor
+                        </a>
+                      </h3>
+                      <p>Software Engineer, Paypal</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <a target="_blank" href="https://hasura.io">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../images/hasura.svg")}
-                    alt="Hasura"
-                  />
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="1.2s">
+                  <a href="https://twitter.com/Tirumarai" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/tirumarai-selvan.png")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/Tirumarai"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a href="https://twitter.com/Tirumarai" target="_blank">
+                          Tirumarai Selvan
+                        </a>
+                      </h3>
+                      <p>Serverless Manager, Hasura</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <a href="https://www.brikl.com">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../images/BrikL.svg")}
-                    alt="BrikL"
-                  />
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="0.8s">
+                  <a href="https://twitter.com/UriGoldshtein" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/uri-goldshtein.jpg")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/UriGoldshtein"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://twitter.com/UriGoldshtein"
+                          target="_blank"
+                        >
+                          Uri Goldshtein
+                        </a>
+                      </h3>
+                      <p>Founder, The Guild</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <a href="https://www.kintohub.com/">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../images/kintohub.png")}
-                    alt="Kintohub"
-                  />
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="1s">
+                  <a href="https://twitter.com/thorwebdev" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/thor-schaeff.png")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/thorwebdev"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://twitter.com/thorwebdev"
+                          target="_blank"
+                        >
+                          Thor Schaeff
+                        </a>
+                      </h3>
+                      <p>Developer Advocate, Stripe</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <a
-                target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdkgoUclUI5KOcdYvunKbtAU13bsoHMCSMxdPphpJ8r6DXh6w/viewform"
-              >
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "150px",
-                      height: "150px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../images/become-sponsor.jpg")}
-                    alt="Hasura"
-                  />
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="1s">
+                  <a href="https://twitter.com/VoodooLawz" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/laura-ambrose.jpg")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/VoodooLawz"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://twitter.com/VoodooLawz"
+                          target="_blank"
+                        >
+                          Laura Ambrose
+                        </a>
+                      </h3>
+                      <p>Front End Developer, KintoHub</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts -->*/}
+                <div className="team-item wow fadeInUp" data-wow-delay="1s">
+                  <a
+                    href="https://www.linkedin.com/in/jason-mok-31121a1"
+                    target="_blank"
+                  >
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/jason-mok.jpg")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://www.linkedin.com/in/jason-mok-31121a1"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-linkedin-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://www.linkedin.com/in/jason-mok-31121a1"
+                          target="_blank"
+                        >
+                          Jason Mok
+                        </a>
+                      </h3>
+                      <p>CEO, LibraGold</p>
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- Team Item Ends*/}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="1s">
+                  <a href="https://twitter.com/chatsidhartha" target="_blank">
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/sidharta-chatterjee.jpg")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://twitter.com/chatsidhartha"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-twitter-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://twitter.com/chatsidhartha"
+                          target="_blank"
+                        >
+                          Sidharta Chatterjee
+                        </a>
+                      </h3>
+                      <p>Software Engineer, Gatsby</p>
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- Team Item Ends --> */}
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {/* <!-- Team Item Starts --> */}
+                <div className="team-item wow fadeInUp" data-wow-delay="1s">
+                  <a
+                    href="https://www.linkedin.com/in/varunvasu"
+                    target="_blank"
+                  >
+                    <div className="team-img">
+                      <img
+                        className="img-fluid"
+                        src={require("../images/varum-vasudevan.png")}
+                        alt=""
+                      />
+                      <div className="team-overlay">
+                        <div className="overlay-social-icon text-center">
+                          <ul className="social-icons">
+                            <li>
+                              <a
+                                href="https://www.linkedin.com/in/varunvasu"
+                                target="_blank"
+                              >
+                                <i
+                                  className="lni-linkedin-filled"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="info-text">
+                      <h3>
+                        <a
+                          href="https://www.linkedin.com/in/varunvasu"
+                          target="_blank"
+                        >
+                          Varum Vasudevan
+                        </a>
+                      </h3>
+                      <p>Full Stack Developer</p>
+                    </div>
+                  </a>
+                </div>
+                {/* <!-- Team Item Ends -->*/}
+              </div>
             </div>
           </div>
           <div className="row">
