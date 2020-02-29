@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
-import Layout from "../../components/layout";
-import Image from "../../components/image";
-import SEO from "../../components/seo";
 import { Slide } from "react-slideshow-image";
-import Countdown from "react-countdown-now";
-import Iframe from "react-iframe";
-import { Helmet } from "react-helmet";
+import Organizers from "../sections/organizers";
+import PastSpeakers from "../sections/pastspeakers";
+import PastSponsors from "../sections/pastsponsors";
 
 require("../../../assets/css/bootstrap.min.css");
 require("../../../assets/fonts/line-icons.css");
@@ -211,7 +207,7 @@ export default function Meetup2() {
         >
           <h1 className="mainTitle">
             GraphQL Hong Kong <br />
-            Meetup #1
+            Meetup #2
           </h1>
           <div className="navbar-brand">
             <img
@@ -238,7 +234,7 @@ export default function Meetup2() {
               margin: "0 auto"
             }}
           >
-            04<sup>th</sup> Dec, 2019
+            05<sup>th</sup> Mar, 2020
           </h2>
           <h2
             class="title-date"
@@ -251,7 +247,7 @@ export default function Meetup2() {
               margin: "0 auto"
             }}
           >
-            23/F AWS, Causeway Bay
+            Youtube & Zoom
           </h2>
           <br />
           <br />
@@ -280,84 +276,7 @@ export default function Meetup2() {
             </a>
           </div>
         </div>
-        {/* <!-- Main Carousel Section Start --> */}
-        {/* <Slideshow /> */}
-        {/* <div id="main-slide" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#main-slide" data-slide-to="0" className="active"></li>
-          <li data-target="#main-slide" data-slide-to="1"></li>
-          <li data-target="#main-slide" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img className="d-block w-100" src="assets/img/slider/slide1.jpg" alt="First slide" />
-            <div className="carousel-caption d-md-block">
-              <p className="fadeInUp wow" data-wow-delay=".6s">Global Grand Event on Digital Design</p>
-              <h1 className="wow fadeInDown heading" data-wow-delay=".4s">Design Thinking Conference</h1>
-              <a href="#" className="fadeInLeft wow btn btn-common btn-lg" data-wow-delay=".6s">Get Ticket</a>
-              <a href="#" className="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Explore More</a>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="assets/img/slider/slide2.jpg" alt="Second slide" />
-            <div className="carousel-caption d-md-block">
-              <p className="fadeInUp wow" data-wow-delay=".6s">Global Grand Event on Digital Design</p>
-              <h1 className="wow bounceIn heading" data-wow-delay=".7s">22 Amazing Speakers</h1>
-              <a href="#" className="fadeInUp wow btn btn-border btn-lg" data-wow-delay=".8s">Learn More</a>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="assets/img/slider/slide3.jpg" alt="Third slide" />
-            <div className="carousel-caption d-md-block">
-              <p className="fadeInUp wow" data-wow-delay=".6s">Global Grand Event on Digital Design</p>
-              <h1 className="wow fadeInUp heading" data-wow-delay=".6s">Book Your Seat Now!</h1>
-              <a href="#" className="fadeInUp wow btn btn-common btn-lg" data-wow-delay=".8s">Explore</a>
-            </div>
-          </div>
-        </div>
-        <a className="carousel-control-prev" href="#main-slide" role="button" data-slide="prev">
-          <span className="carousel-control" aria-hidden="true"><i className="lni-chevron-left"></i></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#main-slide" role="button" data-slide="next">
-          <span className="carousel-control" aria-hidden="true"><i className="lni-chevron-right"></i></span>
-          <span className="sr-only">Next</span>
-        </a>
-      </div> */}
-        {/* <!-- Main Carousel Section End --> */}
       </header>
-      {/* <!-- Header Area wrapper End --> */}
-
-      {/* <!-- Coundown Section Start --> */}
-      {/* <section className="countdown-timer section-padding">
-      <div className="container">
-        <div className="row text-center">
-          <div className="col-md-12 col-sm-12 col-xs-12">
-            <div className="heading-count">
-              <h2 className="wow fadeInDown" data-wow-delay="0.2s">Event Will Start In</h2>
-              <Countdown
-                date={'Sat, 29 Sep 2019 13:0:00'}
-                intervalDelay={0}
-                precision={3}
-                renderer={props => <h2 style={{
-                  fontSize: '2rem',
-                  padding: '1em',
-                  color: 'white',
-                  backgroundColor: '#e535ab'
-                }}>{props.days} days</h2>}
-              />
-            </div>
-          </div>
-          <div className="col-md-12 col-sm-12 col-xs-12">
-            <div className="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-              <div id="clock" className="time-count"></div>
-            </div>
-            <a href="pricing.html" className="btn btn-common wow fadeInUp" data-wow-delay="0.3s">Add to My Calender</a>
-          </div>
-        </div>
-      </div>
-    </section> */}
-      {/* <!-- Coundown Section End --> */}
 
       {/* <!-- Team Section Start --> */}
       <div id="speakers" style={{ paddingBottom: 40 }}></div>
@@ -377,14 +296,14 @@ export default function Meetup2() {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="col-sm-6 col-md-6 col-lg-6">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
-                <a href="https://twitter.com/codingcoop" target="_blank">
+                <a href="https://twitter.com/motleydev" target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../../images/joseph-cooper.png")}
+                      src={require("../../images/jesse-martin.jpg")}
                       alt=""
                     />
                     <div className="team-overlay">
@@ -392,7 +311,7 @@ export default function Meetup2() {
                         <ul className="social-icons">
                           <li>
                             <a
-                              href="https://twitter.com/codingcoop"
+                              href="https://twitter.com/motleydev"
                               target="_blank"
                             >
                               <i
@@ -407,25 +326,24 @@ export default function Meetup2() {
                   </div>
                   <div className="info-text">
                     <h3>
-                      <a href="https://twitter.com/codingcoop" target="_blank">
-                        Joseph Cooper
+                      <a href="https://twitter.com/motleydev" target="_blank">
+                        Jesse Martin
                       </a>
                     </h3>
-                    <p>Founder & CEO, Kintohub</p>
+                    <p>Developer Relations, GraphCMS</p>
                   </div>
                 </a>
               </div>
               {/* <!-- Team Item Ends --> */}
             </div>
-
-            <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="col-sm-6 col-md-6 col-lg-6">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.8s">
-                <a href="https://twitter.com/UriGoldshtein" target="_blank">
+                <a href="https://twitter.com/gethackteam" target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../../images/uri-goldshtein.jpg")}
+                      src={require("../../images/roy-derks.jpg")}
                       alt=""
                     />
                     <div className="team-overlay">
@@ -433,7 +351,7 @@ export default function Meetup2() {
                         <ul className="social-icons">
                           <li>
                             <a
-                              href="https://twitter.com/UriGoldshtein"
+                              href="https://twitter.com/gethackteam"
                               target="_blank"
                             >
                               <i
@@ -449,26 +367,26 @@ export default function Meetup2() {
                   <div className="info-text">
                     <h3>
                       <a
-                        href="https://twitter.com/UriGoldshtein"
+                        href="https://twitter.com/gethackteam"
                         target="_blank"
                       >
-                        Uri Goldshtein
+                        Roy Derks
                       </a>
                     </h3>
-                    <p>Founder & CEO, The Guild</p>
+                    <p>Freelancer, City of Amsterdam</p>
                   </div>
                 </a>
               </div>
               {/* <!-- Team Item Ends --> */}
             </div>
-            <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="col-sm-6 col-md-6 col-lg-6">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
-                <a href="https://twitter.com/meixnertobias" target="_blank">
+                <a href="https://twitter.com/VladimirNovick" target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../../images/tobias-meixner.jpg")}
+                      src={require("../../images/vladimir-novick.jpg")}
                       alt=""
                     />
                     <div className="team-overlay">
@@ -476,7 +394,7 @@ export default function Meetup2() {
                         <ul className="social-icons">
                           <li>
                             <a
-                              href="https://twitter.com/meixnertobias"
+                              href="https://twitter.com/VladimirNovick"
                               target="_blank"
                             >
                               <i
@@ -492,52 +410,34 @@ export default function Meetup2() {
                   <div className="info-text">
                     <h3>
                       <a
-                        href="https://twitter.com/meixnertobias"
+                        href="https://twitter.com/VladimirNovick"
                         target="_blank"
                       >
-                        Tobias Meixner
+                        Vladimir Novick
                       </a>
                     </h3>
-                    <p>Co-Founder & CTO, BrikL</p>
+                    <p>Independent Consultant, Freelancer</p>
                   </div>
                 </a>
               </div>
               {/* <!-- Team Item Ends --> */}
             </div>
-          </div>
-
-          <br />
-          <br />
-          <div className="row">
-            <div className="col-12">
-              <div className="section-title-header text-center">
-                <h1
-                  className="section-title wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  Masters of ceremonies
-                </h1>
-                {/* <p className="wow fadeInDown" data-wow-delay="0.2s">Global Grand Event on Digital Design</p> */}
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center align-items-center">
-            <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="col-sm-6 col-md-6 col-lg-6">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
-                <a href="https://twitter.com/swcarlosrj" target="_blank">
+                <a href="https://twitter.com/hackintoshrao" target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../../images/carlos-rufo.jpg")}
-                      alt="Carlos Rufo"
+                      src={require("../../images/karthic-rao.jpg")}
+                      alt=""
                     />
                     <div className="team-overlay">
                       <div className="overlay-social-icon text-center">
                         <ul className="social-icons">
                           <li>
                             <a
-                              href="https://twitter.com/swcarlosrj"
+                              href="https://twitter.com/hackintoshrao"
                               target="_blank"
                             >
                               <i
@@ -552,18 +452,26 @@ export default function Meetup2() {
                   </div>
                   <div className="info-text">
                     <h3>
-                      <a href="https://twitter.com/swcarlosrj" target="_blank">
-                        Carlos Rufo
+                      <a
+                        href="https://twitter.com/hackintoshrao"
+                        target="_blank"
+                      >
+                        Karthic Rao
                       </a>
                     </h3>
-                    <p>Organizer, GraphQL Hong Kong</p>
+                    <p>Developer Advocate, DGraph</p>
                   </div>
                 </a>
               </div>
               {/* <!-- Team Item Ends --> */}
             </div>
           </div>
-          {/* <a href="speakers.html" className="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">All Speakers</a> */}
+          <br />
+          <br />
+          <Organizers />
+          <br />
+          <br />
+          <PastSpeakers />
         </div>
       </section>
       {/* <!-- Team Section End --> */}
@@ -698,53 +606,6 @@ export default function Meetup2() {
       </section>
       {/* <!-- Services Section End --> */}
 
-      {/* <!-- About Section Start --> */}
-      {/* <section id="about" className="section-padding">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="section-title-header text-center">
-              <h1 className="section-title wow fadeInUp" data-wow-delay="0.2s">About This Event</h1>
-              <p className="wow fadeInDown" data-wow-delay="0.2s">Global Grand Event on Digital Design</p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <div className="about-item">
-              <img className="img-fluid" src="assets/img/about/img1.jpg" alt="" />
-              <div className="about-text">
-                <h3><a href="#">Wanna Know Our Mission?</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
-                <a className="btn btn-common btn-rm" href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <div className="about-item">
-              <img className="img-fluid" src="assets/img/about/img2.jpg" alt="" />
-              <div className="about-text">
-                <h3><a href="#">What you will learn?</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
-                <a className="btn btn-common btn-rm" href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <div className="about-item">
-              <img className="img-fluid" src="assets/img/about/img3.jpg" alt="" />
-              <div className="about-text">
-                <h3><a href="#">What are the benifits?</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
-                <a className="btn btn-common btn-rm" href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section> */}
-      {/* <!-- About Section End --> */}
-
       {/* <!-- Counter Area Start--> */}
       <section className="counter-section section-padding">
         <div className="container">
@@ -763,8 +624,8 @@ export default function Meetup2() {
                 <div className="icon">
                   <i className="lni-timer"></i>
                 </div>
-                <p>December 04th, 2019</p>
-                <span>19:00 – 21:00</span>
+                <p>March 05th, 2020</p>
+                <span>12:00 – 14:30</span>
               </div>
             </div>
             {/* <!-- Counter Item --> */}
@@ -773,8 +634,8 @@ export default function Meetup2() {
                 <div className="icon">
                   <i className="lni-users"></i>
                 </div>
-                <p>~50 Available Seats</p>
-                <span>We're looking for venue sponsors!</span>
+                <p>∞ Available Spots</p>
+                <span>Enjoy a remote meetup!</span>
               </div>
             </div>
             {/* <!-- Counter Item --> */}
@@ -783,7 +644,7 @@ export default function Meetup2() {
                 <div className="icon">
                   <i className="lni-dinner"></i>
                 </div>
-                <p>Free Dinner &amp; Drinks</p>
+                <p>Connect &amp; GraphQL</p>
                 <span>Don’t miss it</span>
               </div>
             </div>
@@ -826,8 +687,8 @@ export default function Meetup2() {
                       aria-expanded="true"
                     >
                       <div className="item-text">
-                        <h4>Wednesday</h4>
-                        <h5>4th December</h5>
+                        <h4>Thrusday</h4>
+                        <h5>5th March</h5>
                       </div>
                     </a>
                   </li>
@@ -861,10 +722,10 @@ export default function Meetup2() {
                               alt=""
                             />
                           </div>
-                          <span className="time">18:30 - 19:00</span>
+                          <span className="time">11:30 - 12:00</span>
                           <h4>Registration</h4>
                           <h5 className="name">
-                            Get ready meeting new folks & enjoying pizza/drinks
+                            Get ready meeting new folks & enjoying chats
                           </h5>
                         </div>
                       </div>
@@ -885,10 +746,10 @@ export default function Meetup2() {
                               alt=""
                             />
                           </div>
-                          <span className="time">19:00 - 19:15</span>
+                          <span className="time">12:00 - 12:15</span>
                           <h4>Welcome & Intro</h4>
                           <h5 className="name">
-                            Carlos Rufo - Organizer, GraphQL Hong Kong
+                            Carlos Rufo - Co-Organizer, GraphQL Hong Kong
                           </h5>
                         </div>
                       </div>
@@ -905,14 +766,14 @@ export default function Meetup2() {
                           <div className="images-box">
                             <img
                               className="img-fluid"
-                              src={require("../../images/joseph-cooper.png")}
+                              src={require("../../images/jesse-martin.jpg")}
                               alt=""
                             />
                           </div>
-                          <span className="time">19:15 - 19:45</span>
-                          <h4>Introducing GraphQL Actions</h4>
+                          <span className="time">12:15 - 12:45</span>
+                          <h4>An Introduction to React Query 1.0</h4>
                           <h5 className="name">
-                            Joseph Cooper - Founder & CEO, Kintohub
+                            Jesse Martin - Developer Relations, GraphCMS
                           </h5>
                         </div>
                       </div>
@@ -929,14 +790,14 @@ export default function Meetup2() {
                           <div className="images-box">
                             <img
                               className="img-fluid"
-                              src={require("../../images/uri-goldshtein.jpg")}
+                              src={require("../../images/roy-derks.jpg")}
                               alt=""
                             />
                           </div>
-                          <span className="time">19:45 - 20:15</span>
-                          <h4>GraphQL where it hurts the most</h4>
+                          <span className="time">12:45 - 13:15</span>
+                          <h4>Testing GraphQL: From Zero To Hundred Percent</h4>
                           <h5 className="name">
-                            Uri Goldshtein - Founder & CEO, The Guild
+                            Roy Derks - Freelancer, City of Amsterdam
                           </h5>
                         </div>
                       </div>
@@ -953,14 +814,38 @@ export default function Meetup2() {
                           <div className="images-box">
                             <img
                               className="img-fluid"
-                              src={require("../../images/tobias-meixner.jpg")}
+                              src={require("../../images/vladimir-novick.jpg")}
                               alt=""
                             />
                           </div>
-                          <span className="time">20:15 - 20:45</span>
-                          <h4>Public GraphQL APIs</h4>
+                          <span className="time">13:15 - 13:45</span>
+                          <h4>TBD</h4>
                           <h5 className="name">
-                            Tobias Meixner - Co-Founder & CTO, BrikL
+                            Vladimir Novick - Independent Consultant, Freelancer
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div id="headingThree">
+                        <div
+                          className="collapsed card-header"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          <div className="images-box">
+                            <img
+                              className="img-fluid"
+                              src={require("../../images/karthic-rao.jpg")}
+                              alt=""
+                            />
+                          </div>
+                          <span className="time">13:45 - 14:15</span>
+                          <h4>Introduction to DGraph</h4>
+                          <h5 className="name">
+                            Karthic Rao - Developer Advocate, DGraph
                           </h5>
                         </div>
                       </div>
@@ -977,14 +862,14 @@ export default function Meetup2() {
                           <div className="images-box">
                             <img
                               className="img-fluid"
-                              src={require("../../images/after-party.png")}
+                              src={require("../../images/tobias-meixner.jpg")}
                               alt=""
                             />
                           </div>
-                          <span className="time">20:45 - 21:30</span>
-                          <h4>After-party</h4>
+                          <span className="time">14:15 - 14:30</span>
+                          <h4>Closing</h4>
                           <h5 className="name">
-                            To be announced at the meetup
+                            Tobias Meixner - Co-Organizer, GraphQL Hong Kong
                           </h5>
                         </div>
                       </div>
@@ -997,261 +882,6 @@ export default function Meetup2() {
         </div>
       </section>
       {/* <!-- Schedule Section End --> */}
-      <div style={{ paddingBottom: 40 }}></div>
-
-      {/*  <!-- Gallary Section Start --> */}
-      <section
-        style={{
-          display: "none"
-        }}
-        id="gallery"
-        className="section-padding"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="section-title-header text-center">
-                <h1
-                  className="section-title wow fadeInUp"
-                  data-wow-delay="0.2s"
-                >
-                  our event gallery
-                </h1>
-                <p className="wow fadeInDown" data-wow-delay="0.2s">
-                  Global Grand Event on Digital Design
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6 col-sm-6 col-lg-4">
-              <div className="gallery-box">
-                <div className="img-thumb">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/img-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="overlay-box text-center">
-                  <a className="lightbox" href="assets/img/gallery/img-1.jpg">
-                    <i className="lni-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="ccol-md-6 col-sm-6 col-lg-4">
-              <div className="gallery-box">
-                <div className="img-thumb">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/img-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="overlay-box text-center">
-                  <a className="lightbox" href="assets/img/gallery/img-2.jpg">
-                    <i className="lni-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="ccol-md-6 col-sm-6 col-lg-4">
-              <div className="gallery-box">
-                <div className="img-thumb">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/img-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="overlay-box text-center">
-                  <a className="lightbox" href="assets/img/gallery/img-3.jpg">
-                    <i className="lni-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="ccol-md-6 col-sm-6 col-lg-4">
-              <div className="gallery-box">
-                <div className="img-thumb">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/img-4.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="overlay-box text-center">
-                  <a className="lightbox" href="assets/img/gallery/img-4.jpg">
-                    <i className="lni-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="ccol-md-6 col-sm-6 col-lg-4">
-              <div className="gallery-box">
-                <div className="img-thumb">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/img-5.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="overlay-box text-center">
-                  <a className="lightbox" href="assets/img/gallery/img-5.jpg">
-                    <i className="lni-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="ccol-md-6 col-sm-6 col-lg-4">
-              <div className="gallery-box">
-                <div className="img-thumb">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/img-6.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="overlay-box text-center">
-                  <a className="lightbox" href="assets/img/gallery/img-6.jpg">
-                    <i className="lni-plus"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center mt-3">
-            <div className="col-xs-12">
-              <a href="#" className="btn btn-common">
-                Browse All
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- Gallary Section End --> */}
-
-      {/* <!-- Ask Question Section Start --> */}
-      {/* <section id="faq" className="section-padding">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="section-title-header text-center">
-              <h1 className="section-title wow fadeInUp" data-wow-delay="0.2s">Ask Question?</h1>
-              <p className="wow fadeInDown" data-wow-delay="0.2s">Global Grand Event on Digital Design</p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-            <div className="accordion">
-              <div className="card">
-                <div className="card-header" id="headingOne">
-                  <div className="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i className="lni-pencil"></i> How to make a new event?
-                  </div>
-                </div>
-                <div id="questionOne" className="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="headingTwo">
-                    <div className="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
-                      <i className="lni-pencil"></i>  Which payment methods do you accept? 
-                    </div>
-                </div>
-                <div id="questionTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="headingThree">
-                  <div className="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
-                    <i className="lni-pencil"></i>  Which document can i bring to meeting?   
-                  </div>
-                </div>
-                <div id="questionThree" className="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="headingThree">
-                  <div className="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
-                   <i className="lni-pencil"></i> Who can join at the live event venue?
-                  </div>
-                </div>
-                <div id="questionFour" className="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-            <div className="accordion">
-              <div className="card">
-                <div className="card-header" id="headingOne2">
-                  <div className="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
-                    <i className="lni-pencil"></i> How to make a new event?
-                  </div>
-                </div>
-                <div id="questionOne2" className="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="headingTwo2">
-                    <div className="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
-                      <i className="lni-pencil"></i>  Which payment methods do you accept? 
-                    </div>
-                </div>
-                <div id="questionTwo2" className="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="headingThree">
-                  <div className="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
-                    <i className="lni-pencil"></i>How to set price? 
-                  </div>
-                </div>
-                <div id="questionFive" className="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="headingThree">
-                  <div className="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
-                    <i className="lni-pencil"></i>  What our price list? 
-                  </div>
-                </div>
-                <div id="questionSix" className="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div className="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
-      {/* <!-- Ask Question Section End --> */}
 
       {/* <!-- Sponsors Section Start --> */}
       <div id="sponsors" style={{ paddingBottom: 40 }}></div>
@@ -1276,7 +906,7 @@ export default function Meetup2() {
           >
             <div className="col-md-6 col-sm-6 col-xs-6">
               <h2>Venue</h2>
-              <a href="https://aws.amazon.com">
+              <a href="https://engineers.sg">
                 <div className="spnsors-logo">
                   <img
                     style={{
@@ -1285,12 +915,11 @@ export default function Meetup2() {
                       objectFit: "contain"
                     }}
                     className="img-fluid"
-                    src={require("../../images/aws.png")}
-                    alt="AWS"
+                    src={require("../../images/engineers-sg.png")}
+                    alt="engineers-sg"
                   />
                 </div>
               </a>
-
               {/* <a
                 target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdkgoUclUI5KOcdYvunKbtAU13bsoHMCSMxdPphpJ8r6DXh6w/viewform"
@@ -1310,8 +939,8 @@ export default function Meetup2() {
               </a> */}
             </div>
             <div className="col-md-6 col-sm-6 col-xs-6">
-              <h2>Food & Drinks</h2>
-              <a target="_blank" href="https://hasura.io">
+              <h2>Staff</h2>
+              <a target="_blank" href="https://www.brikl.com">
                 <div className="spnsors-logo">
                   <img
                     style={{
@@ -1320,241 +949,15 @@ export default function Meetup2() {
                       objectFit: "contain"
                     }}
                     className="img-fluid"
-                    src={require("../../images/hasura.svg")}
-                    alt="Hasura"
+                    src={require("../../images/BrikL.svg")}
+                    alt="BrikL"
                   />
                 </div>
               </a>
             </div>
           </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="section-title-header text-center">
-                <h1
-                  className="section-title wow fadeInUp"
-                  data-wow-delay="0.2s"
-                  style={{
-                    marginTop: 60
-                  }}
-                >
-                  Past Sponsors
-                </h1>
-                <p className="wow fadeInDown" data-wow-delay="0.2s"></p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="row mb-30 text-center wow fadeInDown"
-            data-wow-delay="0.3s"
-          >
-            <div className="col-md-12 col-sm-12 col-xs-12">
-              <a href="https://aws.amazon.com/amplify">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../../images/aws-amplify.png")}
-                    alt="AWS Amplify"
-                  />
-                </div>
-              </a>
-            </div>
-            {/* <div className="col-md-6 col-sm-6 col-xs-6">
-              <a
-                target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdkgoUclUI5KOcdYvunKbtAU13bsoHMCSMxdPphpJ8r6DXh6w/viewform"
-              >
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "200px",
-                      height: "200px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../../images/become-sponsor.jpg")}
-                    alt="Hasura"
-                  />
-                </div>
-              </a>
-            </div> */}
-          </div>
-
-          {/* <div
-            className="row mb-30 text-center wow fadeInDown"
-            data-wow-delay="0.3s"
-          >
-            <div className="col-md-6 col-sm-6 col-xs-6">
-              <h2>Gold</h2>
-              <a href="https://hasura.io">
-                <div className="spnsors-logo">
-                  <img
-                    style={{
-                      width: "160px",
-                      height: "160px",
-                      objectFit: "contain"
-                    }}
-                    className="img-fluid"
-                    src={require("../../images/hasura.svg")}
-                    alt="Hasura"
-                  />
-                </div>
-              </a>
-            </div>
-          </div> */}
-          {/* <div
-            className="row mb-30 text-center wow fadeInDown"
-            data-wow-delay="0.3s"
-          >
-            <div className="col-md-12 col-sm-12 col-xs-12">
-              <h3>We are looking for sponsors and partners</h3>
-            </div>
-          </div> */}
-          {/* <h2>Silver</h2> */}
-          {/* <div className="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s"> */}
-          {/* <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-02.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-03.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-04.png" alt=""/></a>
-            </div>
-          </div>           */}
-          {/* </div> */}
-          {/* <h2>Bronze</h2> */}
-          {/* <div className="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s"> */}
-          {/* <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-02.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-03.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-3 col-xs-12">
-            <div className="spnsors-logo">
-              <a href="#"><img className="img-fluid" src="assets/img/sponsors/logo-04.png" alt=""/></a>
-            </div>
-          </div>           */}
-          {/* </div> */}
+          <PastSponsors />
         </div>
-        {/* <div className="col-12 text-center">
-          <a
-            href="https://drive.google.com/open?id=142I7_ANRwxX40PG7ryLwJ5e30Ey_i0p5"
-            target="_blank"
-            className="btn btn-common"
-          >
-            Become a sponsor
-          </a>
-        </div> */}
-
-        {/* <div
-          style={{
-            marginTop: "5em"
-          }}
-          className="col-12 text-center"
-        >
-          <h3 style={{ marginBottom: "1em" }}>Partners</h3>
-          <a href="https://2019.webconf.asia" target="_blank">
-            <img
-              style={{
-                width: "150px",
-                height: "150px",
-                objectFit: "contain",
-                margin: "0 30px"
-              }}
-              className="img-fluid"
-              src={require("../../images/webconf-asia.svg")}
-              alt="Webconf Asia"
-            />
-          </a>
-          <a href="https://www.graphql-asia.org/" target="_blank">
-            <img
-              style={{
-                width: "150px",
-                height: "150px",
-                objectFit: "contain",
-                margin: "0 30px"
-              }}
-              className="img-fluid"
-              src={require("../../images/GraphQL-Asia-Logo.png")}
-              alt="GraphQL Asia"
-            />
-          </a>
-          <a href="https://2019.jsdc.tw" target="_blank">
-            <img
-              style={{
-                width: "150px",
-                height: "150px",
-                objectFit: "contain",
-                margin: "0 30px"
-              }}
-              className="img-fluid"
-              src={require("../../images/JSDC-2019.png")}
-              alt="JSDC 2019"
-            />
-          </a>
-        </div>
-
-        <div
-          style={{
-            marginTop: "5em"
-          }}
-          className="col-12 text-center"
-        >
-          <h3>Organised by</h3>
-          <div className="org-logo">
-            <a href="https://kintohub.com/" target="_blank">
-              <img
-                style={{
-                  width: "300px",
-                  height: "200px",
-                  objectFit: "contain",
-                  margin: "0 10px"
-                }}
-                className="img-fluid"
-                src={require("../../images/kintohub.png")}
-                alt="KintoHub"
-              />
-            </a>
-            <a href="https://www.brikl.io/" target="_blank">
-              <img
-                style={{
-                  width: "300px",
-                  height: "200px",
-                  objectFit: "contain",
-                  margin: "0 10px"
-                }}
-                className="img-fluid"
-                src={require("../../images/BrikL.svg")}
-                alt="BrikL"
-              />
-            </a>
-          </div> 
-        </div>*/}
       </section>
       {/* <!-- Sponsors Section End --> */}
       <div id="pricing" style={{ paddingBottom: 40 }}></div>
@@ -1588,7 +991,7 @@ export default function Meetup2() {
                 </div>
                 <div className="price">
                   <h2>Passes</h2>
-                  <p>50 Seats Available</p>
+                  <p>∞ Spots Available</p>
                 </div>
                 <div className="pricing-list">
                   <ul>
@@ -1649,16 +1052,16 @@ export default function Meetup2() {
               }}
             >
               <h3 style={{ marginBottom: 40 }}>
-                GraphQL Hong Kong Meetup #1 will be held in
+                GraphQL Hong Kong Meetup #2 will be hosted by
               </h3>
-              <a href="https://aws.amazon.com/" target="_blank">
-                <img width={300} src={require("../../images/aws.png")} />
+              <a href="https://engineers.sg" target="_blank">
+                <img width={500} src={require("../../images/engineers-sg.png")} />
               </a>
               <h3 style={{ margin: "20px 0px" }}>
-                23/F Tower, Central Mansion, 535 Jaffe Rd, Causeway Bay
+                Youtube & Zoom
               </h3>
             </div>
-            <div className="col-12" style={{ padding: 0 }}>
+            {/* <div className="col-12" style={{ padding: 0 }}>
               <div id="conatiner-map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.909922956181!2d114.18173085109052!3d22.281401749138187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404019b30d1286b%3A0x435f07b1a333608e!2sAWS%20Hong%20Kong!5e0!3m2!1sen!2shk!4v1572846267272!5m2!1sen!2shk"
@@ -1670,7 +1073,7 @@ export default function Meetup2() {
                   allowfullscreen
                 ></iframe>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
         <div style={{ paddingBottom: 40 }}></div>

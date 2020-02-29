@@ -1,15 +1,13 @@
 // Components
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import HelmetCustom from "./HelmetCustom";
-import Landing from "./Landing";
-// import Meetup1 from "./meetups/meetup-1";
-// import Meetup2 from "./meetups/meetup-2";
-
-// Utils
-import "./css";
 // Vendors
 import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+// Utils
+import "./css";
+import HelmetCustom from "./HelmetCustom";
+import Meetup2 from "./meetups/meetup-2";
+
 
 require("../../assets/css/bootstrap.min.css");
 require("../../assets/fonts/line-icons.css");
@@ -25,7 +23,7 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <HelmetCustom />
-      <Landing />
+      <Meetup2 />
     </Layout>
   );
 }

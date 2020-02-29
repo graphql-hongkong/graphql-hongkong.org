@@ -328,7 +328,7 @@ export default function Landing() {
                         GraphQL Hong Kong #2 🚀
                       </a>
                     </h3>
-                    <p>February 25th, 2020 @ AWS Hong Kong</p>
+                    <p>March 05th, 2020 @ Engineers SG</p>
                   </div>
                 </a>
               </div>
@@ -700,19 +700,19 @@ export default function Landing() {
               }}
             >
               <h3 style={{ marginBottom: 40 }}>
-                GraphQL Hong Kong Meetup #1 will be held in
+                GraphQL Hong Kong Meetups have been held in
               </h3>
-              <a href="https://aws.amazon.com/" target="_blank">
-                <img width={300} src={require("../images/aws.png")} />
+              <a href="https://aws.amazon.com/" target="_blank" style={{ marginRight: "100px" }}>
+                <img width={200} src={require("../images/aws.png")} />
               </a>
-              <h3 style={{ margin: "20px 0px" }}>
-                23/F Tower, Central Mansion, 535 Jaffe Rd, Causeway Bay
-              </h3>
+              <a href="https://thewave.com.hk/" target="_blank">
+                <img width={400} src={require("../images/the-wave.png")} />
+              </a>
             </div>
             <div className="col-12" style={{ padding: 0 }}>
               <div id="conatiner-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.909922956181!2d114.18173085109052!3d22.281401749138187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404019b30d1286b%3A0x435f07b1a333608e!2sAWS%20Hong%20Kong!5e0!3m2!1sen!2shk!4v1572846267272!5m2!1sen!2shk"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236161.63719331738!2d113.9872734548368!3d22.352662921964193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong%20Kong!5e0!3m2!1ses!2sin!4v1583003108833!5m2!1ses!2sin"
                   style={{
                     width: "100%",
                     height: "500px",
