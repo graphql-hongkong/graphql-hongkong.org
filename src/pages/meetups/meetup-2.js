@@ -247,7 +247,7 @@ export default function Meetup2() {
               margin: "0 auto"
             }}
           >
-            Youtube & Zoom
+            <a href="https://zoom.us/j/881896207" target="_blank">Zoom</a> & <a href="https://youtu.be/l9e9VbGPo2c" target="_blank">Youtube</a>
           </h2>
           <br />
           <br />
@@ -296,7 +296,7 @@ export default function Meetup2() {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-6 col-md-6 col-lg-6">
+            <div className="col-sm-6 col-md-6 col-lg-4">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
                 <a href="https://twitter.com/motleydev" target="_blank">
@@ -336,7 +336,7 @@ export default function Meetup2() {
               </div>
               {/* <!-- Team Item Ends --> */}
             </div>
-            <div className="col-sm-6 col-md-6 col-lg-6">
+            <div className="col-sm-6 col-md-6 col-lg-4">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.8s">
                 <a href="https://twitter.com/gethackteam" target="_blank">
@@ -373,56 +373,13 @@ export default function Meetup2() {
                         Roy Derks
                       </a>
                     </h3>
-                    <p>Freelancer, City of Amsterdam</p>
+                    <p>Senior Frontend Developer, City of Amsterdam</p>
                   </div>
                 </a>
               </div>
               {/* <!-- Team Item Ends --> */}
             </div>
-            <div className="col-sm-6 col-md-6 col-lg-6">
-              {/* <!-- Team Item Starts --> */}
-              <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
-                <a href="https://twitter.com/VladimirNovick" target="_blank">
-                  <div className="team-img">
-                    <img
-                      className="img-fluid"
-                      src={require("../../images/vladimir-novick.jpg")}
-                      alt=""
-                    />
-                    <div className="team-overlay">
-                      <div className="overlay-social-icon text-center">
-                        <ul className="social-icons">
-                          <li>
-                            <a
-                              href="https://twitter.com/VladimirNovick"
-                              target="_blank"
-                            >
-                              <i
-                                className="lni-twitter-filled"
-                                aria-hidden="true"
-                              ></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="info-text">
-                    <h3>
-                      <a
-                        href="https://twitter.com/VladimirNovick"
-                        target="_blank"
-                      >
-                        Vladimir Novick
-                      </a>
-                    </h3>
-                    <p>Independent Consultant, Freelancer</p>
-                  </div>
-                </a>
-              </div>
-              {/* <!-- Team Item Ends --> */}
-            </div>
-            <div className="col-sm-6 col-md-6 col-lg-6">
+            <div className="col-sm-6 col-md-6 col-lg-4">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
                 <a href="https://twitter.com/hackintoshrao" target="_blank">
@@ -773,7 +730,7 @@ export default function Meetup2() {
                           <span className="time">12:15 - 12:45</span>
                           <h4>An Introduction to React Query 1.0</h4>
                           <h5 className="name">
-                            Jesse Martin - Developer Relations, GraphCMS
+                            Jesse Martin - Developer Advocate, GraphCMS
                           </h5>
                         </div>
                       </div>
@@ -797,31 +754,7 @@ export default function Meetup2() {
                           <span className="time">12:45 - 13:15</span>
                           <h4>Testing GraphQL: From Zero To Hundred Percent</h4>
                           <h5 className="name">
-                            Roy Derks - Freelancer, City of Amsterdam
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card">
-                      <div id="headingThree">
-                        <div
-                          className="collapsed card-header"
-                          data-toggle="collapse"
-                          data-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <div className="images-box">
-                            <img
-                              className="img-fluid"
-                              src={require("../../images/vladimir-novick.jpg")}
-                              alt=""
-                            />
-                          </div>
-                          <span className="time">13:15 - 13:45</span>
-                          <h4>TBD</h4>
-                          <h5 className="name">
-                            Vladimir Novick - Independent Consultant, Freelancer
+                            Roy Derks - Senior Frontend Developer, City of Amsterdam
                           </h5>
                         </div>
                       </div>
@@ -842,8 +775,8 @@ export default function Meetup2() {
                               alt=""
                             />
                           </div>
-                          <span className="time">13:45 - 14:15</span>
-                          <h4>Introduction to DGraph</h4>
+                          <span className="time">13:15 - 13:45</span>
+                          <h4>Building GraphQL API for a twitter clone in 10 minutes</h4>
                           <h5 className="name">
                             Karthic Rao - Developer Advocate, DGraph
                           </h5>
@@ -866,8 +799,8 @@ export default function Meetup2() {
                               alt=""
                             />
                           </div>
-                          <span className="time">14:15 - 14:30</span>
-                          <h4>Closing</h4>
+                          <span className="time">13:45 - 14:00</span>
+                          <h4>Closing & Announcements</h4>
                           <h5 className="name">
                             Tobias Meixner - Co-Organizer, GraphQL Hong Kong
                           </h5>
@@ -939,7 +872,7 @@ export default function Meetup2() {
               </a> */}
             </div>
             <div className="col-md-6 col-sm-6 col-xs-6">
-              <h2>Staff</h2>
+              <h2>Swag</h2>
               <a target="_blank" href="https://www.brikl.com">
                 <div className="spnsors-logo">
                   <img
@@ -1014,7 +947,7 @@ export default function Meetup2() {
                   </ul>
                 </div>
                 <a
-                  href="https://www.meetup.com/GraphQLHongKong/events/265065562"
+                  href="https://www.meetup.com/GraphQLHongKong/events/269158848"
                   target="_blank"
                   className="btn btn-common"
                 >
@@ -1058,7 +991,7 @@ export default function Meetup2() {
                 <img width={500} src={require("../../images/engineers-sg.png")} />
               </a>
               <h3 style={{ margin: "20px 0px" }}>
-                Youtube & Zoom
+                @ <a href="https://zoom.us/j/881896207" target="_blank">Zoom</a> & <a href="https://youtu.be/l9e9VbGPo2c" target="_blank">Youtube</a>
               </h3>
             </div>
             {/* <div className="col-12" style={{ padding: 0 }}>
