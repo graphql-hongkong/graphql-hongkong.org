@@ -4,7 +4,6 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 // Utils
-import "./css";
 import HelmetCustom from "./HelmetCustom";
 import Meetup2 from "./meetups/meetup-2";
 
