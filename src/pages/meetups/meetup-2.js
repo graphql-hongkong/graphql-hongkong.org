@@ -386,7 +386,7 @@ export default function Meetup2() {
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../../images/karthic-rao.jpg")}
+                      src={require("../../images/karthic-rao.jpeg")}
                       alt=""
                     />
                     <div className="team-overlay">
@@ -771,7 +771,7 @@ export default function Meetup2() {
                           <div className="images-box">
                             <img
                               className="img-fluid"
-                              src={require("../../images/karthic-rao.jpg")}
+                              src={require("../../images/karthic-rao.jpeg")}
                               alt=""
                             />
                           </div>
