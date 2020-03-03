@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `GraphQL Hong Kong`,
-    description: `One day full of GraphQL in Hong Kong on 29th September 2019`,
+    description: `GraphQL Hong Kong Meetup & Conf`,
     author: `Carlos Rufo & Tobias Meixner`,
   },
   plugins: [
