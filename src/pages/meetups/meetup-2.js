@@ -299,11 +299,11 @@ export default function Meetup2() {
             <div className="col-sm-6 col-md-6 col-lg-4">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
-                <a href="https://twitter.com/motleydev" target="_blank">
+                <a href="https://twitter.com/maarcingebala" target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../../images/jesse-martin.jpg")}
+                      src={require("../../images/marcin-gebala.jpg")}
                       alt=""
                     />
                     <div className="team-overlay">
@@ -311,7 +311,7 @@ export default function Meetup2() {
                         <ul className="social-icons">
                           <li>
                             <a
-                              href="https://twitter.com/motleydev"
+                              href="https://twitter.com/maarcingebala"
                               target="_blank"
                             >
                               <i
@@ -326,11 +326,11 @@ export default function Meetup2() {
                   </div>
                   <div className="info-text">
                     <h3>
-                      <a href="https://twitter.com/motleydev" target="_blank">
-                        Jesse Martin
+                      <a href="https://twitter.com/maarcingebala" target="_blank">
+                        Marcin Gebala
                       </a>
                     </h3>
-                    <p>Developer Relations, GraphCMS</p>
+                    <p>Lead Developer, Saleor</p>
                   </div>
                 </a>
               </div>
@@ -723,14 +723,14 @@ export default function Meetup2() {
                           <div className="images-box">
                             <img
                               className="img-fluid"
-                              src={require("../../images/jesse-martin.jpg")}
+                              src={require("../../images/marcin-gebala.jpg")}
                               alt=""
                             />
                           </div>
                           <span className="time">12:15 - 12:45</span>
-                          <h4>An Introduction to React Query 1.0</h4>
+                          <h4>Real World Graphene</h4>
                           <h5 className="name">
-                            Jesse Martin - Developer Advocate, GraphCMS
+                            Marcin Gebala - Lead Developer, Saleor
                           </h5>
                         </div>
                       </div>
