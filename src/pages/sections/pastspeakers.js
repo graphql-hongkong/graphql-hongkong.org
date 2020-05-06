@@ -11,7 +11,7 @@ const speakers = [
     link: "https://twitter.com/gethackteam",
     image: "roy-derks.jpg",
     name: "Roy Derks",
-    role: "Senior Frontend Developer, City of Amsterdam",
+    role: "Front End Dev, City of Amsterdam",
   },
   {
     link: "https://twitter.com/maarcingebala",
