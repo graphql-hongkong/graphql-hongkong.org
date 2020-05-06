@@ -83,7 +83,7 @@ const speakers = [
     link: "https://twitter.com/bgever",
     image: "bart-verkoeijen.png",
     name: "Bart Verkoeijen",
-    role: "Developer Advocate, KintoHub",
+    role: "Developer Advocate",
   },
 ];
 

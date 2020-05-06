@@ -2,6 +2,14 @@ import React from "react";
 
 const sponsors = [
   {
+    link: "https://www.brikl.com",
+    image: "BrikL.svg",
+  },
+  {
+    link: "https://engineers.sg",
+    image: "engineers-sg.png",
+  },
+  {
     link: "https://aws.amazon.com",
     image: "aws.png",
   },
@@ -12,10 +20,6 @@ const sponsors = [
   {
     link: "https://hasura.io",
     image: "hasura.svg",
-  },
-  {
-    link: "https://www.brikl.com",
-    image: "BrikL.svg",
   },
   {
     link: "https://www.kintohub.com",

@@ -12,7 +12,7 @@ const meetups = {
   },
   past: [
     {
-      image: "graphql-hongkong-2.png",
+      image: "graphql-hongkong-2.jpeg",
       title: "GraphQL Hong Kong #2 🚀",
       subtitle: "March 5th, 2020 @ Engineers SG",
       link: "https://www.meetup.com/GraphQLHongKong/events/269158848",
@@ -355,7 +355,7 @@ export default function Landing() {
                   className="section-title wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
-                  Meetups
+                  Past Meetups
                 </h1>
                 {/* <p className="wow fadeInDown" data-wow-delay="0.2s">Global Grand Event on Digital Design</p> */}
               </div>
@@ -593,8 +593,8 @@ export default function Landing() {
                 <div className="icon">
                   <i className="lni-timer"></i>
                 </div>
-                <p>December 04th, 2019</p>
-                <span>19:00 – 21:00</span>
+                <p>On-site & On-line events</p>
+                <span>Happening after work hours</span>
               </div>
             </div>
             {/* <!-- Counter Item --> */}
@@ -603,8 +603,8 @@ export default function Landing() {
                 <div className="icon">
                   <i className="lni-users"></i>
                 </div>
-                <p> Available Seats</p>
-                <span>We're looking for venue sponsors!</span>
+                <p> Available Spots</p>
+                <span>We're looking for sponsors!</span>
               </div>
             </div>
             {/* <!-- Counter Item --> */}
@@ -613,7 +613,7 @@ export default function Landing() {
                 <div className="icon">
                   <i className="lni-dinner"></i>
                 </div>
-                <p>Free Dinner &amp; Drinks</p>
+                <p>It'll be a blast!</p>
                 <span>Don’t miss it</span>
               </div>
             </div>
@@ -669,10 +669,6 @@ export default function Landing() {
                     <li>
                       <i className="lni-check-mark-circle"></i>
                       <span className="text">Access to all talks</span>
-                    </li>
-                    <li>
-                      <i className="lni-check-mark-circle"></i>
-                      <span className="text">Dinner & Drinks</span>
                     </li>
                     <li>
                       <i className="lni-check-mark-circle"></i>
