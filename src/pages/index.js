@@ -5,8 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 // Utils
 import HelmetCustom from "./HelmetCustom";
-import Meetup2 from "./meetups/meetup-2";
-
+import Landing from "./landing";
 
 require("../../assets/css/bootstrap.min.css");
 require("../../assets/fonts/line-icons.css");
@@ -22,7 +21,7 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <HelmetCustom />
-      <Meetup2 />
+      <Landing />
     </Layout>
   );
 }

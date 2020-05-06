@@ -2,9 +2,35 @@ import React from "react";
 import Sponsors from "./sections/sponsors";
 const slide1 = require("../images/background.jpg");
 
+const meetups = {
+  upcoming: {
+    image: "graphql-hongkong-3.png",
+    title: "GraphQL Hong Kong #3 ⚡️",
+    subtitle: "May 14th, 2020 @ Engineers SG",
+    link: "https://www.meetup.com/GraphQLHongKong/events/270079237",
+    attendeesLimit: "∞",
+  },
+  past: [
+    {
+      image: "graphql-hongkong-2.png",
+      title: "GraphQL Hong Kong #2 🚀",
+      subtitle: "March 5th, 2020 @ Engineers SG",
+      link: "https://www.meetup.com/GraphQLHongKong/events/269158848",
+    },
+    {
+      image: "graphql-hongkong-1.jpeg",
+      title: "GraphQL Hong Kong #1 🎊",
+      subtitle: "December 4th, 2019 @ AWS Hong Kong",
+      link: "https://www.meetup.com/GraphQLHongKong/events/265065562",
+    },
+  ],
+};
+
 export default function Landing() {
+  const { upcoming, past } = meetups;
   return (
     <>
+      {/* <!-- Header Area wrapper Start --> */}
       <header id="header-wrap">
         {/* <!-- Navbar Start --> */}
         <nav className="navbar navbar-expand-lg fixed-top scrolling-navbar">
@@ -32,7 +58,7 @@ export default function Landing() {
                     width: "40px",
                     objectFit: "contain",
                     display: "block",
-                    margin: "0 auto"
+                    margin: "0 auto",
                   }}
                   src={require("../images/graphql-hongkong-logo.png")}
                   alt="GraphQL Hong Kong Logo"
@@ -137,7 +163,7 @@ export default function Landing() {
           url(${slide1})
         `,
             backgroundSize: "cover",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           <h1 className="mainTitle">
@@ -152,7 +178,7 @@ export default function Landing() {
                 objectFit: "contain",
                 display: "block",
                 margin: "0 auto",
-                marginBottom: "20px"
+                marginBottom: "20px",
               }}
               src={require("../images/graphql-hongkong-logo.png")}
               alt="GraphQL Hong Kong Logo"
@@ -166,7 +192,8 @@ export default function Landing() {
               // background: 'white',
               fontSize: "2.5em",
               width: "max-content",
-              margin: "0 auto"
+              margin: "0 auto",
+              marginBottom: "20px",
             }}
           >
             Upcoming Event
@@ -179,10 +206,23 @@ export default function Landing() {
               // background: 'white',
               fontSize: "2.5em",
               width: "max-content",
-              margin: "0 auto"
+              margin: "0 auto",
             }}
           >
-            GraphQL Hong Kong #2 🚀
+            {upcoming.title}
+          </h2>
+          <h2
+            class="title-date"
+            style={{
+              color: "white",
+              // color: '#e535ab',
+              // background: 'white',
+              fontSize: "2.5em",
+              width: "max-content",
+              margin: "0 auto",
+            }}
+          >
+            {upcoming.subtitle}
           </h2>
           <br />
           <br />
@@ -196,7 +236,8 @@ export default function Landing() {
               Submit a talk
             </a>
             <a
-              href="#pricing"
+              href={upcoming.link}
+              target="_blank"
               className="btn btn-common"
               style={{ marginRight: 10 }}
             >
@@ -259,37 +300,6 @@ export default function Landing() {
       </header>
       {/* <!-- Header Area wrapper End --> */}
 
-      {/* <!-- Coundown Section Start --> */}
-      {/* <section className="countdown-timer section-padding">
-      <div className="container">
-        <div className="row text-center">
-          <div className="col-md-12 col-sm-12 col-xs-12">
-            <div className="heading-count">
-              <h2 className="wow fadeInDown" data-wow-delay="0.2s">Event Will Start In</h2>
-              <Countdown
-                date={'Sat, 29 Sep 2019 13:0:00'}
-                intervalDelay={0}
-                precision={3}
-                renderer={props => <h2 style={{
-                  fontSize: '2rem',
-                  padding: '1em',
-                  color: 'white',
-                  backgroundColor: '#e535ab'
-                }}>{props.days} days</h2>}
-              />
-            </div>
-          </div>
-          <div className="col-md-12 col-sm-12 col-xs-12">
-            <div className="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-              <div id="clock" className="time-count"></div>
-            </div>
-            <a href="pricing.html" className="btn btn-common wow fadeInUp" data-wow-delay="0.3s">Add to My Calender</a>
-          </div>
-        </div>
-      </div>
-    </section> */}
-      {/* <!-- Coundown Section End --> */}
-
       {/* <!-- Team Section Start --> */}
       <div id="speakers" style={{ paddingBottom: 40 }}></div>
       <section id="speakers" className="section-padding text-center">
@@ -311,11 +321,11 @@ export default function Landing() {
             <div className="col-sm-10 col-md-10 col-lg-10">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
-                <a href="#" target="_blank">
+                <a href={upcoming.link} target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
-                      src={require("../images/graphql-hongkong-1.jpeg")}
+                      src={require(`../images/${upcoming.image}`)}
                       alt=""
                     />
                     <div className="team-overlay">
@@ -324,11 +334,11 @@ export default function Landing() {
                   </div>
                   <div className="info-text justify-content-center align-items-center">
                     <h3>
-                      <a href="#" target="_blank">
-                        GraphQL Hong Kong #2 🚀
+                      <a href={upcoming.link} target="_blank">
+                        {upcoming.title}
                       </a>
                     </h3>
-                    <p>March 05th, 2020 @ Engineers SG</p>
+                    <p>{upcoming.subtitle}</p>
                   </div>
                 </a>
               </div>
@@ -352,32 +362,36 @@ export default function Landing() {
             </div>
           </div>
           <div className="row justify-content-center align-items-center">
-            <div className="col-sm-6 col-md-6 col-lg-6">
-              {/* <!-- Team Item Starts --> */}
-              <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
-                <a href="#" target="_blank">
-                  <div className="team-img">
-                    <img
-                      className="img-fluid"
-                      src={require("../images/graphql-hongkong-1.jpeg")}
-                      alt=""
-                    />
-                    <div className="team-overlay">
-                      <div className="overlay-social-icon text-center"></div>
-                    </div>
+            {past.map(({ image, title, subtitle, link }) => {
+              return (
+                <div className="col-sm-6 col-md-6 col-lg-6">
+                  {/* <!-- Team Item Starts --> */}
+                  <div className="team-item wow fadeInUp" data-wow-delay="0.4s">
+                    <a href={link} target="_blank">
+                      <div className="team-img">
+                        <img
+                          className="img-fluid"
+                          src={require(`../images/${image}`)}
+                          alt=""
+                        />
+                        <div className="team-overlay">
+                          <div className="overlay-social-icon text-center"></div>
+                        </div>
+                      </div>
+                      <div className="info-text">
+                        <h3>
+                          <a href={link} target="_blank">
+                            {title}
+                          </a>
+                        </h3>
+                        <p>{subtitle}</p>
+                      </div>
+                    </a>
                   </div>
-                  <div className="info-text">
-                    <h3>
-                      <a href="#" target="_blank">
-                        GraphQL Hong Kong #1 🎊
-                      </a>
-                    </h3>
-                    <p>December 4th, 2019 @ AWS Hong Kong</p>
-                  </div>
-                </a>
-              </div>
-              {/* <!-- Team Item Ends --> */}
-            </div>
+                  {/* <!-- Team Item Ends --> */}
+                </div>
+              );
+            })}
           </div>
 
           <br />
@@ -399,7 +413,7 @@ export default function Landing() {
             <div className="col-sm-6 col-md-6 col-lg-6">
               {/* <!-- Team Item Starts --> */}
               <div className="team-item wow fadeInUp" data-wow-delay="0.2s">
-                <a href="https://twitter.com/swcarlosrj" target="_blank">
+                <a href="https://2019.graphql-hongkong.org" target="_blank">
                   <div className="team-img">
                     <img
                       className="img-fluid"
@@ -412,7 +426,10 @@ export default function Landing() {
                   </div>
                   <div className="info-text">
                     <h3>
-                      <a href="https://twitter.com/swcarlosrj" target="_blank">
+                      <a
+                        href="https://2019.graphql-hongkong.org"
+                        target="_blank"
+                      >
                         GraphQL Hong Kong 2019
                       </a>
                     </h3>
@@ -586,7 +603,7 @@ export default function Landing() {
                 <div className="icon">
                   <i className="lni-users"></i>
                 </div>
-                <p>~50 Available Seats</p>
+                <p> Available Seats</p>
                 <span>We're looking for venue sponsors!</span>
               </div>
             </div>
@@ -608,6 +625,8 @@ export default function Landing() {
       {/* <!-- Sponsors Section Start --> */}
       <Sponsors />
       {/* <!-- Sponsors Section End --> */}
+
+      {/* <!-- Pricing Section Start --> */}
       <div id="pricing" style={{ paddingBottom: 40 }}></div>
       <section id="pricing" className="section-padding">
         <div className="container">
@@ -639,7 +658,7 @@ export default function Landing() {
                 </div>
                 <div className="price">
                   <h2>Passes</h2>
-                  <p>50 Seats Available</p>
+                  <p>{upcoming.attendeesLimit} Seats Available</p>
                 </div>
                 <div className="pricing-list">
                   <ul>
@@ -662,7 +681,7 @@ export default function Landing() {
                   </ul>
                 </div>
                 <a
-                  href="https://www.meetup.com/GraphQLHongKong/events/265065562"
+                  href={upcoming.link}
                   target="_blank"
                   className="btn btn-common"
                 >
@@ -674,6 +693,8 @@ export default function Landing() {
           </div>
         </div>
       </section>
+      {/* <!-- Pricing Section End --> */}
+
       {/* <!-- Map Section Start --> */}
       <div id="venue" style={{ paddingBottom: 100 }}></div>
       <section id="venue-map">
@@ -696,13 +717,17 @@ export default function Landing() {
               className="col-md-12 col-sm-12 col-lg-12"
               style={{
                 textAlign: "center",
-                paddingBottom: 40
+                paddingBottom: 40,
               }}
             >
               <h3 style={{ marginBottom: 40 }}>
                 GraphQL Hong Kong Meetups have been held in
               </h3>
-              <a href="https://aws.amazon.com/" target="_blank" style={{ marginRight: "100px" }}>
+              <a
+                href="https://aws.amazon.com/"
+                target="_blank"
+                style={{ marginRight: "100px" }}
+              >
                 <img width={200} src={require("../images/aws.png")} />
               </a>
               <a href="https://thewave.com.hk/" target="_blank">
@@ -716,7 +741,7 @@ export default function Landing() {
                   style={{
                     width: "100%",
                     height: "500px",
-                    border: 0
+                    border: 0,
                   }}
                   allowfullscreen
                 ></iframe>
@@ -727,6 +752,7 @@ export default function Landing() {
         <div style={{ paddingBottom: 40 }}></div>
       </section>
       {/* <!-- Map Section End --> */}
+
       {/* <!-- Code of Conduct Section Start --> */}
       <div id="coc" style={{ paddingBottom: 40 }}></div>
       <section id="coc" className="section-padding">
@@ -754,7 +780,7 @@ export default function Landing() {
                     width: "200px",
                     objectFit: "contain",
                     display: "block",
-                    margin: "0 auto"
+                    margin: "0 auto",
                   }}
                   src={require("../images/graphql-hongkong-logo.png")}
                   alt="GraphQL Hong Kong Logo"
@@ -806,7 +832,7 @@ export default function Landing() {
       {/* <!-- Blog Section Start --> */}
       <section
         style={{
-          display: "none"
+          display: "none",
         }}
         id="blog"
         className="section-padding"
@@ -917,39 +943,6 @@ export default function Landing() {
       </section>
       {/* <!-- Blog Section End --> */}
 
-      {/* <!-- Subscribe Area Start --> */}
-      {/* <div id="subscribe" className="section-padding">
-      <div className="container">
-        <div className="row justify-content-md-center">
-          <div className="col-md-10 col-lg-7">
-            <div className="subscribe-inner wow fadeInDown" data-wow-delay="0.3s">
-              <h2 className="subscribe-title">Sign Up For Our Newsletter</h2>
-              <form className="text-center form-inline">
-                <input className="mb-20 form-control" name="email" placeholder="Enter Your Email Here" />
-                <button type="submit" className="btn btn-common sub-btn" data-style="zoom-in" data-spinner-size="30" name="submit" id="submit">
-                <span className="ladda-label"><i className="lni-check-box"></i> Submit</span>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
-      {/* <!-- Subscribe Area End --> */}
-
-      {/* <!-- Map Section Start --> */}
-      {/* TODO PUT MAP HERE FOR VENUE */}
-      {/* <section id="google-map-area">
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-12">
-            <div id="conatiner-map"></div>
-          </div>
-        </div>
-      </div>
-    </section> */}
-      {/* <!-- Map Section End --> */}
-
       {/* <!-- Contact Us Section --> */}
       <div id="contact" style={{ paddingBottom: 40 }}></div>
       <section id="contact" className="section-padding">
@@ -985,7 +978,7 @@ export default function Landing() {
                     <input
                       name="bot-field"
                       style={{
-                        display: "none"
+                        display: "none",
                       }}
                     />
                     <div className="row">
@@ -1167,7 +1160,7 @@ export default function Landing() {
       <a
         style={{
           height: 0,
-          display: "grid"
+          display: "grid",
         }}
         href="/thank-you"
       >

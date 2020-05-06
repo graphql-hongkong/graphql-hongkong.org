@@ -1,5 +1,33 @@
 import React from "react";
 
+const sponsors = [
+  {
+    link: "https://aws.amazon.com",
+    image: "aws.png",
+  },
+  {
+    link: "https://aws.amazon.com/amplify",
+    image: "aws-amplify.png",
+  },
+  {
+    link: "https://hasura.io",
+    image: "hasura.svg",
+  },
+  {
+    link: "https://www.brikl.com",
+    image: "BrikL.svg",
+  },
+  {
+    link: "https://www.kintohub.com",
+    image: "kintohub.png",
+  },
+  {
+    link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdkgoUclUI5KOcdYvunKbtAU13bsoHMCSMxdPphpJ8r6DXh6w/viewform",
+    image: "become-sponsor.jpg",
+  },
+];
+
 export default function PastSponsors() {
   return (
     <>
@@ -10,11 +38,11 @@ export default function PastSponsors() {
               className="section-title wow fadeInUp"
               data-wow-delay="0.2s"
               style={{
-                marginTop: 60
+                marginTop: 60,
               }}
             >
               Past Sponsors
-                </h1>
+            </h1>
             <p className="wow fadeInDown" data-wow-delay="0.2s"></p>
           </div>
         </div>
@@ -23,105 +51,26 @@ export default function PastSponsors() {
         className="row mb-30 text-center wow fadeInDown"
         data-wow-delay="0.3s"
       >
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <a href="https://aws.amazon.com">
-            <div className="spnsors-logo">
-              <img
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain"
-                }}
-                className="img-fluid"
-                src={require("../../images/aws.png")}
-                alt="AWS"
-              />
+        {sponsors.map(({ link, image }) => {
+          return (
+            <div className="col-md-4 col-sm-6 col-xs-12">
+              <a href={link} target="_blank">
+                <div className="spnsors-logo">
+                  <img
+                    style={{
+                      width: "150px",
+                      height: "150px",
+                      objectFit: "contain",
+                    }}
+                    className="img-fluid"
+                    src={require(`../../images/${image}`)}
+                    alt={image}
+                  />
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <a href="https://aws.amazon.com/amplify">
-            <div className="spnsors-logo">
-              <img
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain"
-                }}
-                className="img-fluid"
-                src={require("../../images/aws-amplify.png")}
-                alt="AWS Amplify"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <a target="_blank" href="https://hasura.io">
-            <div className="spnsors-logo">
-              <img
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain"
-                }}
-                className="img-fluid"
-                src={require("../../images/hasura.svg")}
-                alt="Hasura"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <a href="https://www.brikl.com">
-            <div className="spnsors-logo">
-              <img
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain"
-                }}
-                className="img-fluid"
-                src={require("../../images/BrikL.svg")}
-                alt="BrikL"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <a href="https://www.kintohub.com/">
-            <div className="spnsors-logo">
-              <img
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain"
-                }}
-                className="img-fluid"
-                src={require("../../images/kintohub.png")}
-                alt="Kintohub"
-              />
-            </div>
-          </a>
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <a
-            target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdkgoUclUI5KOcdYvunKbtAU13bsoHMCSMxdPphpJ8r6DXh6w/viewform"
-          >
-            <div className="spnsors-logo">
-              <img
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain"
-                }}
-                className="img-fluid"
-                src={require("../../images/become-sponsor.jpg")}
-                alt="Hasura"
-              />
-            </div>
-          </a>
-        </div>
+          );
+        })}
       </div>
     </>
   );
