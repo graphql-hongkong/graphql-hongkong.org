@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `GraphQL Hong Kong`,
@@ -8,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        // includePaths: ["absolute/path/a", "absolute/path/b"],      
+        // includePaths: ["absolute/path/a", "absolute/path/b"],
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -33,8 +35,12 @@ module.exports = {
         icon: `src/images/graphql-hongkong-logo.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-graphcms",
+      options: {
+        endpoint: process.env.GRAPHCMS_ENDPOINT,
+        downloadLocalImages: true,
+      },
+    },
   ],
-}
+};

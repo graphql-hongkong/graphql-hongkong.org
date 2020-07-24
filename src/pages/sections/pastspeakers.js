@@ -1,4 +1,6 @@
 import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const speakers = [
   {
@@ -89,6 +91,26 @@ const speakers = [
 
 export default function PastSpeakers() {
   return (
+    <StaticQuery
+      query={query}
+      render={(data) => <PastSpeakersComponent data={data} />}
+    />
+  );
+}
+
+function PastSpeakersComponent({ data }) {
+  const imageStatic =
+    data.graphCmsEvent.mc?.[0].image.localFile.childImageSharp.fluid.src;
+  const speakersMc = [
+    ...speakers,
+    {
+      link: "https://twitter.com/bgever",
+      imageStatic,
+      name: "Bart Verkoeijen",
+      role: "Developer Advocate",
+    },
+  ];
+  return (
     <>
       <div className="row">
         <div className="col-12">
@@ -105,18 +127,29 @@ export default function PastSpeakers() {
         data-wow-delay="0.3s"
       >
         <div className="row">
-          {speakers.map(({ link, image, name, role }) => {
+          {speakersMc.map((speaker) => {
+            const { link, image, name, role } = speaker;
             return (
               <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {/* <!-- Team Item Starts --> */}
                 <div className="team-item wow fadeInUp" data-wow-delay="0.8s">
                   <a href={link} target="_blank">
                     <div className="team-img">
-                      <img
-                        className="img-fluid"
-                        src={require(`../../images/${image}`)}
-                        alt=""
-                      />
+                      {speaker.imageStatic ? (
+                        <Img
+                          className="img-fluid"
+                          fluid={
+                            data.graphCmsEvent.mc?.[0].image.localFile
+                              .childImageSharp.fluid
+                          }
+                        />
+                      ) : (
+                        <img
+                          className="img-fluid"
+                          src={require(`../../images/${image}`)}
+                          alt=""
+                        />
+                      )}
                       <div className="team-overlay">
                         <div className="overlay-social-icon text-center">
                           <ul className="social-icons">
@@ -151,3 +184,28 @@ export default function PastSpeakers() {
     </>
   );
 }
+
+const query = graphql`
+  query getGraphCmsEvent {
+    graphCmsEvent(title: { regex: "/19/" }) {
+      id
+      title
+      mc {
+        id
+        name
+        twitter
+        image {
+          id
+          url
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
